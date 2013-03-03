@@ -1,4 +1,4 @@
 inr-dosage
 ==========
 
-Help calculation dosage of your blood thinner.  
+Help calculating the dosage of your blood thinner.  
