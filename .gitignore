@@ -4,3 +4,4 @@ framework
 *.php
 .sass-cache
 init
+*.scss
