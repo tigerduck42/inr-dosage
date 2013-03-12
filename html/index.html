@@ -16,7 +16,7 @@
 <!-- Calculate page -->
 <div data-role="page" id="calc">
 	<div data-role="header" data-position="fixed">
-		<h1>Calculate</h1>
+		<h1>Calculate</h1> <a href="#setting" data-icon="gear" data-mini="true" class="ui-btn-right">Settings</a>
 	</div>
 
 	<div data-role="content">
@@ -37,11 +37,21 @@
 <div data-role="page" id="setting" data-position="fixed">
 
 	<div data-role="header">
-		<h1>Settings</h1>
+		<h1>Settings</h1> <a href="#calc" data-icon="grid" data-mini="true" class="ui-btn-right">Calculate</a>
 	</div><!-- /header -->
 
 	<div data-role="content">
-		<p>Settings go here</p>
+		<form>
+			 <div data-role="rangeslider" data-mini="true">
+				 <label for="range-1a">Therapeutic Range:</label>
+				 <input name="range-1a" id="range-1a" min="0" max="4" step=".1" value="2" type="range">
+				 <label for="range-1b">Therapeutic Range:</label>
+				 <input name="range-1b" id="range-1b" min="0" max="4" step=".1" value="3" type="range">
+			 </div>
+			 <label for="range-1a">Weekly Dosage:</label>
+				 <input name="range-1a" id="range-1a" min="1" max="7" data-mini="true" step=".25" value="2" type="range">
+			  
+		   </form>
 
 	</div><!-- /content -->
 
