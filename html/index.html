@@ -8,61 +8,163 @@
 
 	<script type="text/javascript" src="/javascript/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="/javascript/jquery.mobile-1.3.0.min.js"></script>
+	<script type="text/javascript" src="/javascript/inrdosage.js"></script>
 
 
 
 </head>
 <body >
 <!-- Calculate page -->
-<div data-role="page" id="calc">
-	<div data-role="header" data-position="fixed">
-		<h1>Calculate</h1> <a href="#setting" data-icon="gear" data-mini="true" class="ui-btn-right">Settings</a>
-	</div>
-
-	<div data-role="content">
-		<p>Do the calculation here</p>
-	</div><!-- /content -->
-
-	<div data-role="footer" data-id="myfooter" data-position="fixed">
-		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#calc" data-icon="grid" data-role="button">Calculate</a>
-			<a href="#setting" data-icon="gear" data-role="button">Settings</a>
-		</div>	
-	</div><!-- /footer -->
-</div>
-<!-- Calculate page -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 
-<!-- Settings page -->
-<div data-role="page" id="setting" data-position="fixed">
+ <div data-role="page" id="calc">
+     <div data-role="header" data-position="fixed">
+         <h1>Calculate</h1><a href="#setting" data-icon="gear" data-mini="true" class="ui-btn-right">Settings</a>
+     </div>
 
-	<div data-role="header">
-		<h1>Settings</h1> <a href="#calc" data-icon="grid" data-mini="true" class="ui-btn-right">Calculate</a>
-	</div><!-- /header -->
+     <div data-role="content">
+     		<h3>Input</h3>
+         <label for="range-1a">INR:</label> 
+         <input name="range-1a" id="range-1a" min="1" max="7" data-mini="true" step=".25" value="2" type="range">
+         <label for="range-1a">Weekly Dosage Last Week:</label>
+         <input name="range-1a" id="range-1a" min="1" max="7" data-mini="true" step=".25" value="2" type="range">
 
-	<div data-role="content">
-		<form>
-			 <div data-role="rangeslider" data-mini="true">
-				 <label for="range-1a">Therapeutic Range:</label>
-				 <input name="range-1a" id="range-1a" min="0" max="4" step=".1" value="2" type="range">
-				 <label for="range-1b">Therapeutic Range:</label>
-				 <input name="range-1b" id="range-1b" min="0" max="4" step=".1" value="3" type="range">
-			 </div>
-			 <label for="range-1a">Weekly Dosage:</label>
-				 <input name="range-1a" id="range-1a" min="1" max="7" data-mini="true" step=".25" value="2" type="range">
-			  
-		   </form>
+         <h3>Result</h3>
+         <div class="ui-grid-c">
+             <div class="ui-block-a">
+                 <div class="ui-bar ui-bar-c">
+                     Mon:
+                 </div>
+             </div>
 
-	</div><!-- /content -->
+             <div class="ui-block-b">
+                 <div class="ui-bar ui-bar-c">
+                     5
+                 </div>
+             </div>
+         </div>
 
-	<div data-role="footer" data-id="myfooter" data-position="fixed">
-		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#calc" data-icon="grid" data-role="button">Calculate</a>
-			<a href="#setting" data-icon="gear" data-role="button">Settings</a>
-		</div>	
-	</div><!-- /footer -->
+         <div class="ui-grid-c">
+             <div class="ui-block-a">
+                 <div class="ui-bar ui-bar-c">
+                     Tue:
+                 </div>
+             </div>
 
-</div>
-<!-- Settings page -->
+             <div class="ui-block-b">
+                 <div class="ui-bar ui-bar-c">
+                     5
+                 </div>
+             </div>
+         </div>
+
+         <div class="ui-grid-c">
+             <div class="ui-block-a">
+                 <div class="ui-bar ui-bar-c">
+                     Wed:
+                 </div>
+             </div>
+
+             <div class="ui-block-b">
+                 <div class="ui-bar ui-bar-c">
+                     5
+                 </div>
+             </div>
+         </div>
+
+         <div class="ui-grid-c">
+             <div class="ui-block-a">
+                 <div class="ui-bar ui-bar-c">
+                     Thu:
+                 </div>
+             </div>
+
+             <div class="ui-block-b">
+                 <div class="ui-bar ui-bar-c">
+                     5
+                 </div>
+             </div>
+         </div>
+
+         <div class="ui-grid-c">
+             <div class="ui-block-a">
+                 <div class="ui-bar ui-bar-c">
+                     Fri:
+                 </div>
+             </div>
+
+             <div class="ui-block-b">
+                 <div class="ui-bar ui-bar-c">
+                     5
+                 </div>
+             </div>
+         </div>
+
+         <div class="ui-grid-c">
+             <div class="ui-block-a">
+                 <div class="ui-bar ui-bar-c">
+                     Sat:
+                 </div>
+             </div>
+
+             <div class="ui-block-b">
+                 <div class="ui-bar ui-bar-c">
+                     5
+                 </div>
+             </div>
+         </div>
+
+         <div class="ui-grid-c">
+             <div class="ui-block-a">
+                 <div class="ui-bar ui-bar-c">
+                     Wed:
+                 </div>
+             </div>
+
+             <div class="ui-block-b">
+                 <div class="ui-bar ui-bar-c">
+                     5
+                 </div>
+             </div>
+         </div>
+
+         <div class="ui-grid-c">
+             <div class="ui-block-a">
+                 <div class="ui-bar ui-bar-c">
+                     Sun:
+                 </div>
+             </div>
+
+             <div class="ui-block-b">
+                 <div class="ui-bar ui-bar-c">
+                     5
+                 </div>
+             </div>
+         </div>
+     </div><!-- /content -->
+ </div><!-- Calculate page -->
+ <!-- Settings page -->
+
+ <div data-role="page" id="setting" data-position="fixed">
+     <div data-role="header">
+         <h1>Settings</h1><a href="#calc" data-icon="grid" data-mini="true" class="ui-btn-right btnCalc">Calculate</a>
+     </div><!-- /header -->
+
+     <div data-role="content">
+         
+             <div data-role="rangeslider" data-mini="true">
+                 <label for="range-1a">Therapeutic Range:</label> 
+                 <input name="range-1a" id="range-1a" min="0" max="4" step=".1" value="2" type="range" /> 
+                 <label for="range-1b">Therapeutic Range:</label> 
+                 <input name="range-1b" id="range-1b" min="0" max="4" step=".1" value="3" type="range" />
+             </div>
+             
+             <label for="range-1c">Weekly Dosage:</label> 
+             <input name="range-1c" id="range-1c" min="1" max="7" data-mini="true" step=".25" value="2" type="range" />
+         
+     </div><!-- /content -->
+ </div><!-- Settings page -->
+
 </body>
 </html>
