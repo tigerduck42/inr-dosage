@@ -4,6 +4,7 @@ InrDB = function() {
 	this.dbVersion = '1.0';
 	this.dbSize = 1024; //  bytes
 	this.dbHandle = null;
+	this.result - null;
 
 	this.init = function() {
 		try {
@@ -47,7 +48,9 @@ InrDB = function() {
       );
    }
    
-   this.get = function(key) {
+   this.get = function(key, selector) {
+   	var result = null;
+   	var keep = this;
    	this.dbHandle.transaction(
       	function (transaction) {
       		// Store a key - value pair  
@@ -56,11 +59,15 @@ InrDB = function() {
       			
 	      		if(results.rows.length > 0) {
 		      		var row = results.rows.item(0);
-		      		console.log(row['value']); 
+		      		$(selector).val(row['value']); 
 		      	}
       		});
-        }
-      );
+        });      
+   }
+   
+   this.setResult = function(result) {
+	   this.result = result;
+	   console.log('ll');
    }
 	
 	
